@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Database from "../database/Database"
+import Appconfig from "../AppConfig"
 
 export function SplashScreen({navigation}) {
 
@@ -15,7 +16,7 @@ export function SplashScreen({navigation}) {
   
   return (
     <View style={styles.container}>
-      <Text>SplashScreen</Text>
+      <Text style={{color: 'white', fontSize: 20, fontWeight: '500'}}>Panasonic AC Smart Cloud</Text>
     </View>
   );
 }
@@ -23,7 +24,7 @@ export function SplashScreen({navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: Appconfig.colors.actionbar_color,
     alignItems: 'center',
     justifyContent: 'center',
   },

@@ -32,8 +32,8 @@ module.exports = {
     Dimensions.get('window').width < 350,
   isIOS: Platform.OS === 'ios',
   colors: {
-    actionbar_color: '#23A2A3',
-    main_button_color: '#78CCD0',
+    actionbar_color: '#364053',
+    main_button_color: '#5294c8',
     border_color: '#87C7CB',
     primaryColor: '#78CCD0',
     primaryDarkColor: '#3ba5aa',

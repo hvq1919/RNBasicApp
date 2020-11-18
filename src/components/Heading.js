@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import Appconfig from '../AppConfig'
 
 export function Heading({ children, style, ...props }) {
   return <Text {...props} style={[styles.title, style]}>{children}</Text>;
@@ -7,7 +8,8 @@ export function Heading({ children, style, ...props }) {
 
 const styles = StyleSheet.create({
   title: {
-    fontSize: 32,
-    color: "black",
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: Appconfig.colors.main_button_color,
   },
 });
